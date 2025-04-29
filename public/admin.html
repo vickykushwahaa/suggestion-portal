@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="assets/admin.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Submissions</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+  
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+    
+    <div class="table-container">
+      <table id="submissionsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Our Community</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f0f9ff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 100%;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #fef08a;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-radius: 8px;
+      font-size: 16px;
+      background: rgba(255,255,255,0.1);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: white;
+      background: rgba(255,255,255,0.2);
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    button {
+      background: linear-gradient(45deg, #f472b6, #fb923c);
+      color: white;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      background: linear-gradient(45deg, #fb923c, #f472b6);
+    }
+
+    .error {
+      color: #fecaca;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .message {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .success {
+      background: #4ade80;
+      color: #14532d;
+    }
+
+    .error-message {
+      background: #f87171;
+      color: #7f1d1d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Join Our Community 🌟</h1>
+    <form id="joinForm">
+      <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" required>
+        <div class="error" id="nameError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" required>
+        <div class="error" id="phoneError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" required>
+        <div class="error" id="emailError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Tell us about yourself</label>
+        <textarea id="description" rows="4"></textarea>
+      </div>
+      
+      <button type="submit">Join Now! 🚀</button>
+    </form>
+    
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
